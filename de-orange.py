@@ -6,14 +6,17 @@ def de_orange(image_path):
     image = Image.open(image_path).convert("RGB")
     r, g, b = image.split()
 
-    # Reduce red slightly, increase blue slightly
-    r = r.point(lambda i: i * 0.92)
-    b = b.point(lambda i: min(i * 1.05, 255))
+    # Adjust red and blue channels for better balance
+    r = r.point(lambda i: i * 0.98)       # Reduce red more
+    b = b.point(lambda i: min(i * 1.01, 255))  # Slight blue boost
 
     image = Image.merge('RGB', (r, g, b))
 
-    # Optional: Slight contrast boost for clarity
+    # Slight contrast boost for clarity
     image = ImageEnhance.Contrast(image).enhance(1.05)
+
+    # Slight saturation reduction to neutralize color intensity
+    image = ImageEnhance.Color(image).enhance(0.9)  # 0.9 means 90% saturation
 
     return image
 
@@ -25,7 +28,7 @@ def process_folder(folder):
     for filename in os.listdir(folder):
         if filename.lower().endswith(('.jpg', '.jpeg', '.png')):
             input_path = os.path.join(folder, filename)
-            output_path = os.path.join(output_folder, f'{os.path.splitext(filename)[0]}_fixed.jpg')
+            output_path = os.path.join(output_folder, f'{os.path.splitext(filename)[0]}_de-orange.jpg')
 
             try:
                 img = de_orange(input_path)
