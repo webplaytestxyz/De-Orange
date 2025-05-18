@@ -6,7 +6,7 @@ de-orange is a lightweight, drag-and-drop batch tool that automatically removes 
 
     Batch process entire folders of .jpg and .png files
 
-    Smart color correction to reduce orange/saturated skin tones
+    Smart color correction to reduce orange/oversaturated skin tones
 
     Saves corrected images to a subfolder automatically
 
