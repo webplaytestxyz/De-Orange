@@ -1,0 +1,21 @@
+altgraph @ file:///home/conda/feedstock_root/build_artifacts/altgraph_1734870509730/work
+contourpy==1.3.2
+cycler==0.12.1
+fonttools==4.58.0
+future @ file:///home/conda/feedstock_root/build_artifacts/future_1738926421307/work
+importlib_metadata @ file:///home/conda/feedstock_root/build_artifacts/importlib-metadata_1737420181517/work
+kiwisolver==1.4.8
+matplotlib==3.10.3
+numpy==2.2.6
+opencv-python==4.11.0.86
+packaging @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_packaging_1745345660/work
+pefile @ file:///home/conda/feedstock_root/build_artifacts/pefile_1675867622763/work
+pillow==11.2.1
+pyinstaller @ file:///D:/bld/pyinstaller_1744798290373/work
+pyinstaller-hooks-contrib @ file:///home/conda/feedstock_root/build_artifacts/pyinstaller-hooks-contrib_1746353494763/work
+pyparsing==3.2.3
+python-dateutil==2.9.0.post0
+pywin32==307
+pywin32-ctypes @ file:///D:/bld/pywin32-ctypes_1727282164340/work
+six==1.17.0
+zipp @ file:///home/conda/feedstock_root/build_artifacts/zipp_1732827521216/work
